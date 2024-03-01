@@ -1,0 +1,128 @@
+.loading-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Optional styles for the animation */
+.lottie-animation {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.scroll-for-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: lightgray;
+}
+
+.scroll-for-more span {
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.scroll-for-more i {
+    font-size: 50px;
+    animation: fadeInBounce 1s ease forwards;
+}
+
+.scroll-for-more.animated {
+    animation: fadeInBounce 1s ease forwards, bounce 1s ease forwards, bounceContinuously 2s infinite;
+}
+
+.text-below-lottie-container {
+    position: absolute;
+    bottom: 300px; /* Adjust the distance from the bottom */
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* Center horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center text content */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    color: #4285F4; /* Use Google's primary color */
+}
+
+.text-below-lottie {
+    font-size: 24px;
+    margin-bottom: 10px; /* Adjust vertical spacing between text elements */
+    animation: fadeIn 0.5s ease forwards;
+}
+@media (max-width: 768px) {
+    .text-below-lottie-container {
+        bottom: 350px; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .text-below-lottie-container {
+        bottom: 350px; /* Further adjust for smaller screens */
+    }
+
+    .text-below-lottie {
+        font-size: 20px; /* Decrease font size for smaller screens */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBounce {
+    0%, 20%, 50%, 80%, 100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    40% {
+        transform: translateY(-10px); /* Adjust the bounce height as needed */
+    }
+    60% {
+        transform: translateY(-5px); /* Adjust the bounce height as needed */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px); /* Adjust the bounce height as needed */
+    }
+    60% {
+        transform: translateY(-5px); /* Adjust the bounce height as needed */
+    }
+}
+
+@keyframes bounceContinuously {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the bounce height as needed */
+    }
+}
+
+
+
+
+
