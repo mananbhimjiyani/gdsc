@@ -21,12 +21,45 @@
 .App-link {
   color: #61dafb;
 }
+.App-section {
+  padding-top: 80px; /* Adjust the padding as needed to create space for the navbar */
+}
+
+.home-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Adjust the height as needed */
+}
+
+.home-text {
+  text-align: center; /* Align text within the h3 element */
+  max-width: 80%; /* Limit the width of the text */
+}
+.gdsc-header {
+  font-size: 36px; /* Adjust the font size as needed */
+  color: #4285f4; /* Use GDSC theme color */
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  text-decoration: underline; /* Add underline decoration */
+  text-decoration-color: #4285f4; /* Match the color to the text color */
+}
+
+.gdsc-highlight {
+  background-color: #ffff00; /* Use a highlight color */
+}
+
 
 .App-section {
   width: 100%;
   min-height: 100vh;
   background: #fff;
 }
+
+.content-wrapper {
+
+  text-align: center; /* Align content within the wrapper */
+}
+
 
 .App-navigation {
   position: sticky;

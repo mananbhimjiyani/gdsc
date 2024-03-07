@@ -41,7 +41,7 @@
 
 .text-below-lottie-container {
     position: absolute;
-    bottom: 300px; /* Adjust the distance from the bottom */
+    bottom: 250px; /* Adjust the distance from the bottom */
     left: 0;
     right: 0;
     margin: 0 auto; /* Center horizontally */
